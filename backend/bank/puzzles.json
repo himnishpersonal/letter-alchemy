@@ -1,0 +1,365 @@
+{
+  "launch_date": "2026-10-01",
+  "puzzles": [
+    {
+      "number": 1,
+      "start": "THANK",
+      "target": "MIGHT",
+      "rules": [
+        "vowel",
+        "consonant",
+        "anagram",
+        "alphabet_retreat"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 2,
+      "start": "MOVED",
+      "target": "LINES",
+      "rules": [
+        "alphabet_retreat",
+        "vowel",
+        "keyboard_left",
+        "consonant"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "number": 3,
+      "start": "STONE",
+      "target": "VOTES",
+      "rules": [
+        "anagram",
+        "keyboard_right",
+        "consonant",
+        "keyboard_left"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 4,
+      "start": "PANEL",
+      "target": "PEACE",
+      "rules": [
+        "anagram",
+        "consonant",
+        "consonant",
+        "duplicate"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 5,
+      "start": "TOWER",
+      "target": "WHILE",
+      "rules": [
+        "anagram",
+        "keyboard_left",
+        "consonant",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 6,
+      "start": "THERE",
+      "target": "CLOSE",
+      "rules": [
+        "consonant",
+        "vowel",
+        "consonant",
+        "consonant"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "number": 7,
+      "start": "NORTH",
+      "target": "THREE",
+      "rules": [
+        "consonant",
+        "anagram",
+        "vowel",
+        "keyboard_right"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 8,
+      "start": "NAKED",
+      "target": "MEANT",
+      "rules": [
+        "consonant",
+        "keyboard_left",
+        "anagram",
+        "alphabet_advance"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 9,
+      "start": "HIRED",
+      "target": "TREES",
+      "rules": [
+        "consonant",
+        "anagram",
+        "keyboard_left",
+        "vowel"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 10,
+      "start": "SWORD",
+      "target": "GOODS",
+      "rules": [
+        "anagram",
+        "duplicate",
+        "consonant",
+        "keyboard_right"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 11,
+      "start": "BEGAN",
+      "target": "BRING",
+      "rules": [
+        "vowel",
+        "keyboard_right",
+        "anagram",
+        "keyboard_right"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 12,
+      "start": "TASTE",
+      "target": "START",
+      "rules": [
+        "anagram",
+        "duplicate",
+        "keyboard_left",
+        "alphabet_advance"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 13,
+      "start": "POSTS",
+      "target": "SHIPS",
+      "rules": [
+        "anagram",
+        "reverse",
+        "consonant",
+        "keyboard_left"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 14,
+      "start": "SHAPE",
+      "target": "WORSE",
+      "rules": [
+        "consonant",
+        "vowel",
+        "anagram",
+        "consonant"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "number": 15,
+      "start": "TEAMS",
+      "target": "DATED",
+      "rules": [
+        "consonant",
+        "anagram",
+        "keyboard_right",
+        "duplicate"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 16,
+      "start": "HOLDS",
+      "target": "RULED",
+      "rules": [
+        "alphabet_advance",
+        "consonant",
+        "vowel",
+        "keyboard_right"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 17,
+      "start": "MAKER",
+      "target": "MILLS",
+      "rules": [
+        "alphabet_advance",
+        "alphabet_advance",
+        "vowel",
+        "duplicate"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 18,
+      "start": "SOLVE",
+      "target": "POWER",
+      "rules": [
+        "anagram",
+        "alphabet_retreat",
+        "alphabet_advance",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 19,
+      "start": "BOOST",
+      "target": "SEATS",
+      "rules": [
+        "anagram",
+        "vowel",
+        "vowel",
+        "duplicate"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 20,
+      "start": "READY",
+      "target": "LOANS",
+      "rules": [
+        "consonant",
+        "vowel",
+        "consonant",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 21,
+      "start": "BOARD",
+      "target": "BAKER",
+      "rules": [
+        "anagram",
+        "vowel",
+        "consonant",
+        "anagram"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 22,
+      "start": "SHOES",
+      "target": "COSTS",
+      "rules": [
+        "keyboard_left",
+        "consonant",
+        "anagram",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 23,
+      "start": "WELLS",
+      "target": "TASKS",
+      "rules": [
+        "vowel",
+        "alphabet_retreat",
+        "consonant",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 24,
+      "start": "CARDS",
+      "target": "BASED",
+      "rules": [
+        "alphabet_advance",
+        "alphabet_advance",
+        "alphabet_retreat",
+        "keyboard_right"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 25,
+      "start": "FEWER",
+      "target": "SERVE",
+      "rules": [
+        "alphabet_retreat",
+        "consonant",
+        "anagram",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 26,
+      "start": "ALERT",
+      "target": "EARLY",
+      "rules": [
+        "anagram",
+        "alphabet_retreat",
+        "consonant",
+        "anagram"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 27,
+      "start": "GRASS",
+      "target": "WRONG",
+      "rules": [
+        "vowel",
+        "consonant",
+        "consonant",
+        "anagram"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 28,
+      "start": "STAGE",
+      "target": "DEATH",
+      "rules": [
+        "anagram",
+        "keyboard_right",
+        "keyboard_right",
+        "anagram"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 29,
+      "start": "YIELD",
+      "target": "FIRES",
+      "rules": [
+        "consonant",
+        "anagram",
+        "consonant",
+        "keyboard_left"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "number": 30,
+      "start": "GRADE",
+      "target": "REACH",
+      "rules": [
+        "consonant",
+        "alphabet_retreat",
+        "anagram",
+        "consonant"
+      ],
+      "difficulty": "easy"
+    }
+  ]
+}

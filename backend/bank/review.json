@@ -1,0 +1,405 @@
+{
+  "status": "generated_candidates_needing_playtest",
+  "seed": 20261001,
+  "puzzles": [
+    {
+      "number": 1,
+      "path": [
+        "THANK",
+        "THINK",
+        "THING",
+        "NIGHT",
+        "MIGHT"
+      ],
+      "score": 54.18,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 2,
+      "path": [
+        "MOVED",
+        "LOVED",
+        "LIVED",
+        "LIVES",
+        "LINES"
+      ],
+      "score": 47.67,
+      "common_route_count": 1,
+      "branching_total": 9
+    },
+    {
+      "number": 3,
+      "path": [
+        "STONE",
+        "NOTES",
+        "NOTED",
+        "VOTED",
+        "VOTES"
+      ],
+      "score": 45.33,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 4,
+      "path": [
+        "PANEL",
+        "PLANE",
+        "PLATE",
+        "PLACE",
+        "PEACE"
+      ],
+      "score": 44.62,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 5,
+      "path": [
+        "TOWER",
+        "WROTE",
+        "WRITE",
+        "WHITE",
+        "WHILE"
+      ],
+      "score": 44.38,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 6,
+      "path": [
+        "THERE",
+        "THESE",
+        "THOSE",
+        "CHOSE",
+        "CLOSE"
+      ],
+      "score": 44.25,
+      "common_route_count": 1,
+      "branching_total": 10
+    },
+    {
+      "number": 7,
+      "path": [
+        "NORTH",
+        "WORTH",
+        "THROW",
+        "THREW",
+        "THREE"
+      ],
+      "score": 43.98,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 8,
+      "path": [
+        "NAKED",
+        "NAMED",
+        "NAMES",
+        "MEANS",
+        "MEANT"
+      ],
+      "score": 43.67,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 9,
+      "path": [
+        "HIRED",
+        "TIRED",
+        "TRIED",
+        "TRIES",
+        "TREES"
+      ],
+      "score": 43.35,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 10,
+      "path": [
+        "SWORD",
+        "WORDS",
+        "WOODS",
+        "FOODS",
+        "GOODS"
+      ],
+      "score": 42.95,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 11,
+      "path": [
+        "BEGAN",
+        "BEGUN",
+        "BEGIN",
+        "BEING",
+        "BRING"
+      ],
+      "score": 42.85,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 12,
+      "path": [
+        "TASTE",
+        "STATE",
+        "STATS",
+        "STARS",
+        "START"
+      ],
+      "score": 42.8,
+      "common_route_count": 1,
+      "branching_total": 4
+    },
+    {
+      "number": 13,
+      "path": [
+        "POSTS",
+        "SPOTS",
+        "STOPS",
+        "SHOPS",
+        "SHIPS"
+      ],
+      "score": 42.67,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 14,
+      "path": [
+        "SHAPE",
+        "SHARE",
+        "SHORE",
+        "HORSE",
+        "WORSE"
+      ],
+      "score": 42.17,
+      "common_route_count": 1,
+      "branching_total": 9
+    },
+    {
+      "number": 15,
+      "path": [
+        "TEAMS",
+        "TEARS",
+        "RATES",
+        "RATED",
+        "DATED"
+      ],
+      "score": 42.15,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 16,
+      "path": [
+        "HOLDS",
+        "HOLES",
+        "ROLES",
+        "RULES",
+        "RULED"
+      ],
+      "score": 42.12,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 17,
+      "path": [
+        "MAKER",
+        "MAKES",
+        "MALES",
+        "MILES",
+        "MILLS"
+      ],
+      "score": 41.6,
+      "common_route_count": 1,
+      "branching_total": 4
+    },
+    {
+      "number": 18,
+      "path": [
+        "SOLVE",
+        "LOVES",
+        "LOVER",
+        "LOWER",
+        "POWER"
+      ],
+      "score": 41.6,
+      "common_route_count": 1,
+      "branching_total": 8
+    },
+    {
+      "number": 19,
+      "path": [
+        "BOOST",
+        "BOOTS",
+        "BOATS",
+        "BEATS",
+        "SEATS"
+      ],
+      "score": 41.57,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 20,
+      "path": [
+        "READY",
+        "READS",
+        "ROADS",
+        "LOADS",
+        "LOANS"
+      ],
+      "score": 41.57,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 21,
+      "path": [
+        "BOARD",
+        "BROAD",
+        "BREAD",
+        "BREAK",
+        "BAKER"
+      ],
+      "score": 41.43,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 22,
+      "path": [
+        "SHOES",
+        "SHOWS",
+        "SHOTS",
+        "HOSTS",
+        "COSTS"
+      ],
+      "score": 41.43,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 23,
+      "path": [
+        "WELLS",
+        "WALLS",
+        "WALKS",
+        "TALKS",
+        "TASKS"
+      ],
+      "score": 41.3,
+      "common_route_count": 1,
+      "branching_total": 8
+    },
+    {
+      "number": 24,
+      "path": [
+        "CARDS",
+        "CARES",
+        "CASES",
+        "BASES",
+        "BASED"
+      ],
+      "score": 41.17,
+      "common_route_count": 1,
+      "branching_total": 5
+    },
+    {
+      "number": 25,
+      "path": [
+        "FEWER",
+        "FEVER",
+        "NEVER",
+        "NERVE",
+        "SERVE"
+      ],
+      "score": 41.15,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 26,
+      "path": [
+        "ALERT",
+        "LATER",
+        "LASER",
+        "LAYER",
+        "EARLY"
+      ],
+      "score": 41.12,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 27,
+      "path": [
+        "GRASS",
+        "GROSS",
+        "GROWS",
+        "GROWN",
+        "WRONG"
+      ],
+      "score": 41.05,
+      "common_route_count": 1,
+      "branching_total": 6
+    },
+    {
+      "number": 28,
+      "path": [
+        "STAGE",
+        "GATES",
+        "HATES",
+        "HATED",
+        "DEATH"
+      ],
+      "score": 41.0,
+      "common_route_count": 1,
+      "branching_total": 4
+    },
+    {
+      "number": 29,
+      "path": [
+        "YIELD",
+        "FIELD",
+        "FILED",
+        "FIRED",
+        "FIRES"
+      ],
+      "score": 40.73,
+      "common_route_count": 1,
+      "branching_total": 7
+    },
+    {
+      "number": 30,
+      "path": [
+        "GRADE",
+        "TRADE",
+        "TRACE",
+        "REACT",
+        "REACH"
+      ],
+      "score": 40.6,
+      "common_route_count": 1,
+      "branching_total": 8
+    }
+  ],
+  "rule_families": {
+    "vowel": 15,
+    "consonant": 37,
+    "anagram": 26,
+    "alphabet": 16,
+    "keyboard": 19,
+    "duplicate": 6,
+    "reverse": 1
+  }
+}

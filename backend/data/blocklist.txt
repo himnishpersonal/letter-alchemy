@@ -1,0 +1,10 @@
+# Excluded from the generated word lists. Review additions before each release.
+slurs
+penis
+vulva
+raped
+rapes
+porno
+jones
+james
+costa

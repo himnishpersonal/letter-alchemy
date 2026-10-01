@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.sqlite3
+tests/
+scripts/
+bank/answer_key.json
+bank/review.json
+bank/audit.json

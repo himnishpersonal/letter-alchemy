@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "launch_date": "2026-10-01",
+  "puzzle_count": 30,
+  "valid_words": 3628,
+  "common_words": 1722,
+  "rule_counts": {
+    "vowel": 15,
+    "consonant": 37,
+    "anagram": 26,
+    "alphabet_retreat": 8,
+    "keyboard_left": 9,
+    "keyboard_right": 10,
+    "duplicate": 6,
+    "alphabet_advance": 8,
+    "reverse": 1
+  },
+  "errors": [],
+  "warnings": []
+}
