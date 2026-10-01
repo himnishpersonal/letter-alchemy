@@ -41,6 +41,28 @@ def test_no_future_or_bad_completion(tmp_path):
                        "device_id": str(uuid4()), "seconds": 10, "hints_used": 0}).status_code == 404
 
 
+def test_hard_mode_hides_rules_and_step_feedback(tmp_path):
+    bank = json.loads((BANK / "puzzles.json").read_text())
+    solution = load_answer_key()[1]
+    app = create_app(database_url=f"sqlite:///{tmp_path / 'results.sqlite3'}",
+                     today_fn=lambda: date.fromisoformat(bank["launch_date"]))
+    client = TestClient(app)
+
+    standard = client.get("/puzzle/today").json()
+    hard = client.get("/puzzle/today?mode=hard").json()
+    assert standard["mode"] == "standard" and len(standard["rules"]) == 4
+    assert hard == {key: value for key, value in standard.items() if key != "rules"} | {"mode": "hard"}
+    assert client.get("/puzzle/1?mode=hard").json() == hard
+    assert client.get("/puzzle/today?mode=unknown").status_code == 422
+
+    partial = {"intermediates": [solution[1], None, None]}
+    full = {"intermediates": solution[1:4]}
+    assert client.post("/puzzle/1/validate?mode=hard", json=partial).json() == {"solved": False}
+    assert client.post("/puzzle/1/validate?mode=hard", json=full).json() == {"solved": True}
+    assert "steps" in client.post("/puzzle/1/validate", json=full).json()
+    assert client.post("/puzzle/1/validate?mode=unknown", json=full).status_code == 422
+
+
 def test_render_requires_persistent_database(monkeypatch):
     monkeypatch.setenv("RENDER", "true")
     monkeypatch.delenv("DATABASE_URL", raising=False)

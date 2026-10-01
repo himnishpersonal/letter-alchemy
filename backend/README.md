@@ -29,9 +29,9 @@ Open `http://127.0.0.1:8000/docs` for OpenAPI. Local completions use `backend/al
 | Route | Behavior |
 | --- | --- |
 | `GET /healthz` | Process and bank check |
-| `GET /puzzle/today` | UTC daily puzzle |
-| `GET /puzzle/{number}` | Released archive puzzle; future numbers return 404 |
-| `POST /puzzle/{number}/validate` | Check each of three slots; incomplete edges are `pending` |
+| `GET /puzzle/today` | UTC daily puzzle; `?mode=hard` omits the rule cards |
+| `GET /puzzle/{number}` | Released archive puzzle; `?mode=hard` omits the rules; future numbers return 404 |
+| `POST /puzzle/{number}/validate` | Check each of three slots; `?mode=hard` returns only `solved` |
 | `POST /puzzle/{number}/complete` | Replay full path and record one result per puzzle/device |
 | `GET /puzzle/{number}/stats` | Completion count and median submitted duration |
 

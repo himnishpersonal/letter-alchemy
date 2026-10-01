@@ -6,9 +6,9 @@ All endpoints send and receive JSON except `/docs`. No user account or authentic
 
 ## Daily flow
 
-1. Fetch `GET /puzzle/today`. Render its five-letter `start` and `target`, four ordered rule cards, and **three** empty intermediate slots.
-2. Let the player fill any slot. Send the current three slots to `POST /puzzle/{number}/validate` when they ask to check, or after a complete entry. Send `null` for blank slots.
-3. Use each returned step status to explain errors. `solved: true` means all four links in the chain are legal.
+1. Fetch `GET /puzzle/today` for standard mode or `GET /puzzle/today?mode=hard` for hard mode. Render its five-letter `start` and `target` with **three** empty intermediate slots. Standard mode includes four ordered rule cards; hard mode omits them.
+2. Let the player fill any slot. Send the current three slots to `POST /puzzle/{number}/validate` in standard mode or `POST /puzzle/{number}/validate?mode=hard` in hard mode. Send `null` for blank slots.
+3. In standard mode, use each returned step status to explain errors. In hard mode, show only whether the complete chain was solved. `solved: true` means all four links in the chain are legal.
 4. On success, send the same three words to `POST /puzzle/{number}/complete` with a device UUID, elapsed seconds, and hint count. Store one random UUID in browser local storage and reuse it for future days.
 5. Optionally fetch `/puzzle/{number}/stats` for the share screen.
 
@@ -32,9 +32,12 @@ The archive route serves only puzzle numbers already released. Both routes retur
   "start": "THANK",
   "target": "MIGHT",
   "rules": ["vowel", "consonant", "anagram", "alphabet_retreat"],
-  "difficulty": "easy"
+  "difficulty": "easy",
+  "mode": "standard"
 }
 ```
+
+Pass `?mode=hard` to either puzzle GET route to omit `rules`. The response includes `"mode":"hard"` and still includes `number`, `start`, `target`, and `difficulty`. Omitting `mode` defaults to `standard`; any other value returns HTTP 422. The mode choice is a frontend setting and uses the same daily puzzle in both modes.
 
 `difficulty` is an automatic estimate; it is not a scoring contract. A puzzle before launch, a future puzzle, or a number missing from the bank returns HTTP 404:
 
@@ -73,6 +76,8 @@ Each step checks the link from the prior word to the next word, including the fi
 | `repeated_word` | That word already appeared earlier in the chain. |
 
 A step is `pending` if either adjacent slot is blank. A later step may be `valid` even if an earlier step is invalid; `solved` is true only when **all four** steps are valid. A filled word may be legal without matching the editorial answer key.
+
+Pass `?mode=hard` to receive only `{"solved":false}` or `{"solved":true}`. The server still checks the same hidden rules and dictionary. Hard mode gives no step status or error reason, even for a partial chain. The client should wait for all three slots to be filled before offering a Check button. The completion endpoint does not need a mode parameter; it accepts any legal chain in either mode.
 
 Malformed requests return HTTP 422 with FastAPI's standard validation-error shape. Missing or unreleased puzzle numbers return 404.
 
@@ -133,5 +138,6 @@ Keyboard rows are `QWERTYUIOP`, `ASDFGHJKL`, and `ZXCVBNM`. There is no wrapping
 
 - There is no hint endpoint yet. The completion route records a client-supplied hint count; agree on hint behavior before adding a public hint button.
 - There is no account or server-managed streak. Keep a V1 streak locally in the browser.
+- Hard mode is an optional presentation and feedback setting. The API does not verify which mode a player used, and `/stats` combines completions from both modes. Do not present hard-mode records as a separate verified leaderboard.
 - The backend allows configured browser origins through CORS. Set `ALCHEMY_CORS_ORIGINS` on Render to the deployed frontend origin. Local defaults allow `http://localhost:3000` and `http://localhost:5173`.
 - A free Render service can sleep when idle, so the first request after inactivity can be slow. Show a loading state for the daily fetch.

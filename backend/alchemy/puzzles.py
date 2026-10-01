@@ -19,9 +19,12 @@ class Puzzle:
     rules: tuple[Rule, Rule, Rule, Rule]
     difficulty: str
 
-    def public(self) -> dict:
-        return {"number": self.number, "start": self.start, "target": self.target,
-                "rules": [rule.value for rule in self.rules], "difficulty": self.difficulty}
+    def public(self, show_rules: bool = True) -> dict:
+        result = {"number": self.number, "start": self.start, "target": self.target}
+        if show_rules:
+            result["rules"] = [rule.value for rule in self.rules]
+        result["difficulty"] = self.difficulty
+        return result
 
 
 def load_bank(path: Path = BANK / "puzzles.json") -> tuple[date, dict[int, Puzzle]]:

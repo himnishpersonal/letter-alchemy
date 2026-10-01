@@ -4,6 +4,7 @@ import os
 import statistics
 from datetime import date, datetime, timezone
 from pathlib import Path
+from typing import Literal
 from uuid import UUID
 
 from fastapi import FastAPI, HTTPException
@@ -15,6 +16,8 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
 
 from .lexicon import ROOT, load_lexicon
 from .puzzles import BANK, Puzzle, load_bank, validate_intermediates
+
+PlayMode = Literal["standard", "hard"]
 
 
 class Base(DeclarativeBase):
@@ -89,17 +92,18 @@ def create_app(bank_path: Path = BANK / "puzzles.json", database_url: str | None
         return {"status": "ok", "bank_size": len(puzzles)}
 
     @app.get("/puzzle/today")
-    def today():
+    def today(mode: PlayMode = "standard"):
         number = (today_fn() - launch).days + 1
-        return released(number).public()
+        return {**released(number).public(show_rules=mode == "standard"), "mode": mode}
 
     @app.get("/puzzle/{number}")
-    def puzzle(number: int):
-        return released(number).public()
+    def puzzle(number: int, mode: PlayMode = "standard"):
+        return {**released(number).public(show_rules=mode == "standard"), "mode": mode}
 
     @app.post("/puzzle/{number}/validate")
-    def validate(number: int, request: ValidationRequest):
-        return validate_intermediates(released(number), request.intermediates, valid)
+    def validate(number: int, request: ValidationRequest, mode: PlayMode = "standard"):
+        result = validate_intermediates(released(number), request.intermediates, valid)
+        return {"solved": result["solved"]} if mode == "hard" else result
 
     @app.post("/puzzle/{number}/complete")
     def complete(number: int, request: CompletionRequest):
